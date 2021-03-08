@@ -28,8 +28,7 @@ router.post('/api/users/:id/roles',
         const roles = createdRole.map((element: { _id: any; }) => element._id);
       
     
-        const user = await User.findById(req.params.id);
-        // const user = await User.findByIdAndUpdate(userId, {roles});
+        const user = await User.findByIdAndUpdate(userId, {roles});
         
 
         res.status(200).send(user);
