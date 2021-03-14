@@ -8,6 +8,7 @@ interface UserAttrs {
     email: string;
     username: string;
     password: string;
+    roles: [];
 }
 
 // An interface that describes that a User Model has

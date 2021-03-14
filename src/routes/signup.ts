@@ -33,7 +33,8 @@ router.post('/api/users/signup', [
         throw new BadRequestError('Email in use');
     }
 
-    const user = User.build({email, username, password});
+    const roles:any = [];
+    const user = User.build({email, username, password, roles});
     await user.save();
 
     //Generate JWT

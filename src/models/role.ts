@@ -6,7 +6,7 @@ import { textSpanContainsPosition } from 'typescript';
 export interface RoleAttrs {
     name: string;
     description: string;
-    permissions: string[];
+    permissions: [];
 }
 
 // An interface that describes that a Role Model has
